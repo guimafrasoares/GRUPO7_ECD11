@@ -7,7 +7,8 @@ public class HelloWorld {
 		this.name = name;
 	}
 
-	public String getHello () {
+	public String getHello() {
+		int a, b = 0;
 		return "Hello world, " + name;
 	}
 }
