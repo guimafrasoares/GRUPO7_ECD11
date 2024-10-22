@@ -25,13 +25,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build da solucao
+    - name: Build da Solução
       run: mvn -B package --file pom.xml
 
-    - name: Rodar padrão de código
+    - name: Rodar Padrão de Código
       run: mvn checkstyle:check
 
-    - name: Rodar os Testes Unitarios
+    - name: Rodar os Testes Unitários
       run: mvn test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
