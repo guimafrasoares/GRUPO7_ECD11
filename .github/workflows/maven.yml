@@ -28,8 +28,8 @@ jobs:
     - name: Build da solucao
       run: mvn -B package --file pom.xml
 
-    #- name: Rodar padrão de código
-      #run: mvn checkstyle:check
+    - name: Rodar padrão de código
+      run: mvn checkstyle:check
 
     - name: Rodar os Testes Unitarios
       run: mvn test
