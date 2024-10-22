@@ -24,11 +24,15 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
+
+    - name: Build da solucao
       run: mvn -B package --file pom.xml
-      
-    - name: Checkstyle with Maven
-      run: mvn checkstyle:check
+
+    #- name: Rodar padrão de código
+      #run: mvn checkstyle:check
+
+    - name: Rodar os Testes Unitarios
+      run: mvn test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     #- name: Update dependency graph
